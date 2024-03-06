@@ -1,0 +1,121 @@
+@import "variables";
+
+body {
+  width: 100%;
+  box-sizing: border-box;
+  background: $white;
+}
+
+@font-face {
+  font-family: "Vetrino";
+  src: url("../../fonts/Vetrino.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Header
+
+.header {
+  padding: 0 100px;
+  height: 215px;
+  position: relative;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: $transition;
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  width: 90%;
+  height: 200px;
+  margin-top: 0px;
+  box-shadow: 0 5px 0 #cd3a5b;
+  z-index: 100;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  column-gap: 4rem;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  column-gap: 2rem;
+  padding: 0%;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  font-weight: 500;
+  color: $black;
+  outline: none;
+  transition: $transition;
+}
+
+.nav__link:hover {
+  color: $hover;
+}
+
+.header__btn {
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  padding: 16px 24px;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: bold;
+  text-align: center;
+  color: $white;
+  background-color: $pink;
+  border-radius: 15px;
+  outline: none;
+  transition: $transition;
+}
+
+.header__btn:hover {
+  background-color: $hover;
+}
+
+.header__btn:focus {
+  background-color: $focus;
+}
+
+.nav__eng {
+  text-decoration: none;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: bold;
+  outline: none;
+  transition: $transition;
+  color: $pink;
+}
+
+.nav__eng:hover {
+  color: $hover;
+}
+
+// Main
+
+.main__background-image {
+  background-image: url("../../assets/images/main-1500.jpg");
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  color: #fff;
+  text-align: end;
+}
+
+.h1 {
+  font-family: $font-family-h;
+  font-size: $font-size-h1;
+  font-weight: 100;
+  margin: 0;
+}

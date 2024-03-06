@@ -1,0 +1,118 @@
+body {
+  width: 100%;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+@font-face {
+  font-family: "Vetrino";
+  src: url("../../fonts/Vetrino.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.header {
+  padding: 0 100px;
+  height: 215px;
+  position: relative;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  width: 90%;
+  height: 200px;
+  margin-top: 0px;
+  box-shadow: 0 5px 0 #cd3a5b;
+  z-index: 100;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  padding: 0%;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #161518;
+  outline: none;
+  transition: 0.3s;
+}
+
+.nav__link:hover {
+  color: #cd3a5b;
+}
+
+.header__btn {
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 16px 24px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  background-color: #f35e79;
+  border-radius: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.header__btn:hover {
+  background-color: #cd3a5b;
+}
+
+.header__btn:focus {
+  background-color: #ffced3;
+}
+
+.nav__eng {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  outline: none;
+  transition: 0.3s;
+  color: #f35e79;
+}
+
+.nav__eng:hover {
+  color: #cd3a5b;
+}
+
+.main__background-image {
+  background-image: url("../../assets/images/main-1500.jpg");
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  color: #fff;
+  text-align: end;
+}
+
+.h1 {
+  font-family: "Vetrino", sans-serif;
+  font-size: 7em;
+  font-weight: 100;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
