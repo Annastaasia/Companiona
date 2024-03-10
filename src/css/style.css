@@ -11,6 +11,7 @@ body {
   font-style: normal;
 }
 .header {
+  width: auto;
   padding: 0 100px;
   height: 160px;
   position: relative;
@@ -24,7 +25,7 @@ body {
 .header.sticky {
   position: fixed;
   top: 0;
-  width: 90%;
+  width: calc(100% - 200px);
   height: 140px;
   margin-top: 0px;
   box-shadow: 0 5px 0 #cd3a5b;
@@ -147,7 +148,7 @@ body {
   font-size: 4em;
   font-weight: 100;
   margin: 0;
-  padding-top: 7vh;
+  padding-top: 120px;
   text-align: center;
 }
 
@@ -240,7 +241,7 @@ body {
 }
 
 .doing {
-  padding: 0 100px;
+  padding: 120px 100px 0px 100px;
 }
 
 .doing__background-image {
@@ -253,6 +254,23 @@ body {
 
 .doing__container {
   display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+.doing__h2 {
+  font-family: "Vetrino", sans-serif;
+  font-size: 4em;
+  font-weight: 100;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 10vh;
+}
+
+.doing__cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
 }
 
 .doing__card {
@@ -284,7 +302,7 @@ body {
 
 .doing__p {
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   padding: 0;
 }
@@ -294,4 +312,26 @@ body {
   font-size: 16px;
   font-weight: 400;
   padding: 0;
+}
+
+.team__container {
+  padding: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 3rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  padding-top: 5%;
+}
+
+.team__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__p {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */

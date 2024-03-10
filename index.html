@@ -21,18 +21,18 @@
         <nav class="header__nav">
             <ul class="nav__list">
                 <li>
-                    <a href="#about" class="nav__link">
+                    <a href="#about" class="nav__link smooth-scroll">
                         О нас</a>
                 </li>
                 <li>
-                    <a href="#do" class="nav__link">
+                    <a href="#do" class="nav__link smooth-scroll">
                         Чем мы занимаемся</a>
                 </li>
                 <li>
-                    <a href="#team" class="nav__link">Команда</a>
+                    <a href="#team" class="nav__link smooth-scroll">Команда</a>
                 </li>
             </ul>
-            <a href="https://codelibrary.info/files/1113_javascript-s-nulya-do-profi.pdf" class="header__btn">Поддержать
+            <a href="https://boosty.to/companionaid" class="header__btn">Поддержать
                 нас</a>
             <a href="eng.html" class="nav__eng" title="Английская версия">EN</a>
         </nav>
@@ -45,7 +45,7 @@
             </div>
         </section>
         <section class="about">
-            <h2 class="h2">О нас</h2>
+            <h2 class="h2" id="about">О нас</h2>
             <div class="about__container">
                 <p class="about__p">Наш проект основан на идеях и ценностях феминизма. <strong>«Попутчица»</strong> -
                     место солидарности
@@ -85,110 +85,112 @@
                         <p class="value__p">Бережность</p>
                     </div>
                 </div>
-                <a href="https://codelibrary.info/files/1113_javascript-s-nulya-do-profi.pdf"
-                    class="about__btn">Поддержать
+                <a href="https://boosty.to/companionaid" class="about__btn">Поддержать
                     нас</a>
             </div>
         </section>
-        <section class="doing">
+        <section class="doing" id="do">
             <div class="doing__background-image">
-            <h2 class="h2">Чем мы занимаемся</h2>
-            <div class="doing__container">
-                <div class="doing__cards">
+                <h2 class="doing__h2">Чем мы занимаемся</h2>
+                <div class="doing__container">
+                    <div class="doing__cards">
+                        <div class="doing__card">
+                            <div class="doing__title">
+                                <img src="./assets/images/doing-card.svg" alt="сердце">
+                                <h3 class="doing__h3">Карта неспокойных мест города</h3>
+                            </div>
+                            <p class="doing__p">На нашей странице в Инстаграмме мы собираем ваши истории о небезопасных
+                                местах в
+                                городах. Это не
+                                просто коллекция рассказов, но и шаг к изменению ситуации. Мы создаем карту, позволяющую
+                                избегать небезопасных маршрутов, и акцентируем внимание на вопросах безопасности в
+                                городах.
+                            </p>
+                            <a class="nav__eng"
+                                href="https://docs.google.com/forms/d/1WyAZ61SqKD0vkbXVZCXCoaedjR5nLOp9yUC4gGAfflk/edit">Поделиться
+                                историей</a>
+                        </div>
+                        <div class="doing__card">
+                            <div class="doing__title">
+                                <img src="./assets/images/doing-card.svg" alt="сердце">
+                                <h3 class="doing__h3">Коммьюнити «Попутчица»</h3>
+                            </div>
+                            <p class="doing__p">Наше сообщество – это безопасное место. В нашем чате* можно рассказывать
+                                свои
+                                истории, делиться
+                                информацией, а также найти соратн_иц, партнер_ок для путешествий и по_друзей. Наш
+                                специальный
+                                бот присваивает рейтинг участни_цам и помогает строить более безопасные связи.</p>
+                            <p class="doing__smalltext">*Для обеспечения максимальной безопасности в чате каждая
+                                участни_ца
+                                проходит строгую верификацию
+                            </p>
+                            <a class="nav__eng"
+                                href="https://docs.google.com/forms/d/1xHjqvSAsJrMAO6MJDLeWZykaQa-_SJbDLOu_Hjo50po/edit">Стать
+                                частью коммьюнити</a>
+                        </div>
+                    </div>
                     <div class="doing__card">
                         <div class="doing__title">
                             <img src="./assets/images/doing-card.svg" alt="сердце">
-                            <h3 class="doing__h3">Карта неспокойных мест города</h3>
+                            <h3 class="doing__h3">Приложение «Попутчица»</h3>
                         </div>
-                        <p class="doing__p">На нашей странице в Инстаграмме мы собираем ваши истории о небезопасных
-                            местах в
-                            городах. Это не
-                            просто коллекция рассказов, но и шаг к изменению ситуации. Мы создаем карту, позволяющую
-                            избегать небезопасных маршрутов, и акцентируем внимание на вопросах безопасности в городах.
-                        </p>
-                        <a class="nav__eng"
-                            href="https://docs.google.com/forms/d/1WyAZ61SqKD0vkbXVZCXCoaedjR5nLOp9yUC4gGAfflk/edit">Поделиться
-                            историей</a>
+                        <p class="doing__p">В нашем приложении можно будет делиться своим местоположением и в случае
+                            опасности рассылать
+                            информацию с помощью экстренной кнопки, а также звонить другим пользователь_ницам или в наш
+                            круглосуточный центр поддержки.</p>
                     </div>
-                    <div class="doing__card">
-                        <div class="doing__title">
-                            <img src="./assets/images/doing-card.svg" alt="сердце">
-                            <h3 class="doing__h3">Коммьюнити «Попутчица»</h3>
-                        </div>
-                        <p class="doing__p">Наше сообщество – это безопасное место. В нашем чате* можно рассказывать
-                            свои
-                            истории, делиться
-                            информацией, а также найти соратн_иц, партнер_ок для путешествий и по_друзей. Наш
-                            специальный
-                            бот присваивает рейтинг участни_цам и помогает строить более безопасные связи.</p>
-                        <p class="doing__smalltext">*Для обеспечения максимальной безопасности в чате каждая участни_ца
-                            проходит строгую верификацию
-                        </p>
-                        <a class="nav__eng"
-                            href="https://docs.google.com/forms/d/1WyAZ61SqKD0vkbXVZCXCoaedjR5nLOp9yUC4gGAfflk/edit">Стать
-                            частью коммьюнити</a>
-                    </div>
-                </div>
-                <div class="doing__card">
-                    <div class="doing__title">
-                        <img src="./assets/images/doing-card.svg" alt="сердце">
-                        <h3 class="doing__h3">Приложение «Попутчица»</h3>
-                    </div>
-                    <p class="doing__p">В нашем приложении можно будет делиться своим местоположением и в случае
-                        опасности рассылать
-                        информацию с помощью экстренной кнопки, а также звонить другим пользователь_ницам или в наш
-                        круглосуточный центр поддержки.</p>
                 </div>
             </div>
-        </div>
         </section>
         <section class="team">
-            <h2 class="h2">Команда</h2>
+            <h2 class="h2" id="team">Команда</h2>
             <div class="team__container">
                 <div class="team__card">
                     <img src="./assets/images/masha.svg" alt="маша">
-                    <p>Маша</p>
-                    <p>делает штуки с СММ</p>
+                    <p class="team__cardtitle">Маша</p>
+                    <p class="team__p">делает штуки с СММ</p>
                 </div>
-                <div class="team_card">
+                <div class="team__card">
                     <img src="./assets/images/masha.svg" alt="маша">
-                    <p>Маша</p>
-                    <p>делает штуки с СММ</p>
+                    <p class="team__cardtitle">Маша</p>
+                    <p class="team__p">делает штуки с СММ</p>
                 </div>
-                <div class="team_card">
+                <div class="team__card">
                     <img src="./assets/images/masha.svg" alt="маша">
-                    <p>Маша</p>
-                    <p>делает штуки с СММ</p>
+                    <p class="team__cardtitle">Маша</p>
+                    <p class="team__p">делает штуки с СММ</p>
                 </div>
-                <div class="team_card">
+                <div class="team__card">
                     <img src="./assets/images/masha.svg" alt="маша">
-                    <p>Маша</p>
-                    <p>делает штуки с СММ</p>
+                    <p class="team__cardtitle">Маша</p>
+                    <p class="team__p">делает штуки с СММ</p>
                 </div>
-                <div class="team_card">
+                <div class="team__card">
                     <img src="./assets/images/masha.svg" alt="маша">
-                    <p>Маша</p>
-                    <p>делает штуки с СММ</p>
+                    <p class="team__cardtitle">Маша</p>
+                    <p class="team__p">делает штуки с СММ</p>
                 </div>
-                <div class="team_card">
+                <div class="team__card">
                     <img src="./assets/images/masha.svg" alt="маша">
-                    <p>Маша</p>
-                    <p>делает штуки с СММ</p>
+                    <p class="team__cardtitle">Маша</p>
+                    <p class="team__p">делает штуки с СММ</p>
                 </div>
-                <div class="team_card">
+                <div class="team__card">
                     <img src="./assets/images/masha.svg" alt="маша">
-                    <p>Маша</p>
-                    <p>делает штуки с СММ</p>
+                    <p class="team__cardtitle">Маша</p>
+                    <p class="team__p">делает штуки с СММ</p>
                 </div>
-                <div class="team_card">
+                <div class="team__card">
                     <img src="./assets/images/masha.svg" alt="маша">
-                    <p>Маша</p>
-                    <p>делает штуки с СММ</p>
+                    <p class="team__cardtitle">Маша</p>
+                    <p class="team__p">делает штуки с СММ</p>
                 </div>
             </div>
         </section>
     </main>
     <script src="./script/header.js"></script>
+    <script src="./script/scroll.js"></script>
 </body>
 
 </html>
