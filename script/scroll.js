@@ -4,7 +4,7 @@ document.querySelectorAll('.smooth-scroll').forEach(anchor => {
 
         const target = document.querySelector(this.getAttribute('href'));
         const headerHeight = document.querySelector('.header').offsetHeight;
-        const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
+        const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight;
 
         window.scrollTo({
             top: targetPosition,
