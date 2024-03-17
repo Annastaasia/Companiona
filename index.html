@@ -17,25 +17,41 @@
 
 <body>
     <header class="header" id="myHeader">
-        <img src="./assets/images/logo.svg" class="header__logo" alt="Логотип" />
-        <nav class="header__nav">
-            <ul class="nav__list">
-                <li>
-                    <a href="#about" class="nav__link smooth-scroll">
-                        О нас</a>
-                </li>
-                <li>
-                    <a href="#do" class="nav__link smooth-scroll">
-                        Чем мы занимаемся</a>
-                </li>
-                <li>
-                    <a href="#team" class="nav__link smooth-scroll">Команда</a>
-                </li>
+
+        <div class="navbar-container container">
+            <input class="checkbox" type="checkbox" name="" id="menuToggle" />
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li class="li"><a class="nav__link smooth-scroll" href="#about">О нас</a></li>
+                <li class="li"><a class="nav__link smooth-scroll" href="#do">Чем мы занимаемся</a></li>
+                <li class="li"><a class="nav__link smooth-scroll" href="#team">Команда</a></li>
             </ul>
-            <a href="https://boosty.to/companionaid" class="header__btn" target="_blank">Поддержать
-                нас</a>
-            <a href="eng.html" class="nav__eng" title="Английская версия">EN</a>
-        </nav>
+            <img src="./assets/images/logo.svg" class="header__logo" alt="Логотип" />
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#about" class="nav__link smooth-scroll">
+                            О нас</a>
+                    </li>
+                    <li>
+                        <a href="#do" class="nav__link smooth-scroll">
+                            Чем мы занимаемся</a>
+                    </li>
+                    <li>
+                        <a href="#team" class="nav__link smooth-scroll">Команда</a>
+                    </li>
+                </ul>
+                <a href="https://boosty.to/companionaid" class="header__btn" target="_blank">Поддержать
+                    нас</a>
+                <a href="eng.html" class="nav__eng" title="Английская версия">EN</a>
+            </nav>
+
+        </div>
+
     </header>
     <main>
         <section class="main">
@@ -106,7 +122,7 @@
                                 избегать небезопасных маршрутов, и акцентируем внимание на вопросах безопасности в
                                 городах.
                             </p>
-                            <a class="nav__eng"
+                            <a class="doing__a"
                                 href="https://docs.google.com/forms/d/1WyAZ61SqKD0vkbXVZCXCoaedjR5nLOp9yUC4gGAfflk/edit"
                                 target="_blank">Поделиться
                                 историей</a>
@@ -126,7 +142,7 @@
                                 участни_ца
                                 проходит строгую верификацию
                             </p>
-                            <a class="nav__eng"
+                            <a class="doing__a"
                                 href="https://docs.google.com/forms/d/1xHjqvSAsJrMAO6MJDLeWZykaQa-_SJbDLOu_Hjo50po/edit"
                                 target="_blank">Стать
                                 частью коммьюнити</a>
@@ -217,19 +233,25 @@
             </nav>
             <div class="social">
                 <div class="inst__container">
-                    <img src="./assets/images/instagram.png" alt="instagram">
-                    <p>*Запрещена в РФ</p>
+                    <a href="https://www.instagram.com/companionaid" target="_blank">
+                        <img src="./assets/images/instagram.png" alt="instagram">
+                    </a>
+                    <p class="inst__mark">*Запрещена в РФ</p>
                 </div>
-                <img src="./assets/images/telegram.png" alt="telegram">
+                <a href="https://t.me/companionaid" target="_blank">
+                    <img src="./assets/images/telegram.png" alt="telegram">
+                </a>
             </div>
         </div>
         <div class="second__container">
-            <p>Иллюстрации предоставлены <a href="https://storyset.com/">StorySet library</a></p>
-            <p>Сайт проекта “Попутчица”, 2024. Все права защищены ©</p>
+            <p class="footer__p">Иллюстрации предоставлены <a href="https://storyset.com/" class="footer__a">StorySet
+                    library</a></p>
+            <p class="footer__p">Сайт проекта “Попутчица” 2024. Все права защищены ©</p>
         </div>
     </footer>
     <script src="./script/header.js"></script>
     <script src="./script/scroll.js"></script>
+    <script src="./script/burger.js"></script>
 </body>
 
 </html>
