@@ -118,7 +118,7 @@ body {
     height: 62px;
     width: 52px;
     top: 45px;
-    z-index: 5;
+    z-index: 25;
     opacity: 0;
     cursor: pointer;
   }
@@ -131,7 +131,7 @@ body {
     border-radius: 15px;
     padding: 16px;
     top: 45px;
-    z-index: 2;
+    z-index: 20;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -160,6 +160,7 @@ body {
   }
 
   .menu-items {
+    position: absolute;
     padding-top: 230px;
     background: #ffeff0;
     height: 100vh;
@@ -172,6 +173,7 @@ body {
     margin-top: 0;
     padding-left: 30px;
     transition: transform 0.5s ease-in-out;
+    z-index: 5;
   }
 
   .menu-items .li {
@@ -202,18 +204,21 @@ body {
     top: 5px;
     left: 85px;
     width: 130px;
+    z-index: 5;
   }
 
   .header__btn {
     position: absolute;
     top: 45px;
     right: 75px;
+    z-index: 5;
   }
 
   .nav__eng {
     position: absolute;
     top: 65px;
     right: 1px;
+    z-index: 5;
   }
 
   .navbar-container input[type="checkbox"]:checked ~ .menu-items {
@@ -348,50 +353,78 @@ body {
 @media screen and (min-width: 1300px) {
   .h1 {
     font-size: $font-size-h1;
-    padding-top: 5.4vh;
-    padding-right: 10vw;
+    margin-top: 5vh;
+    margin-right: 10vw;
   }
 
   .main__p {
     font-size: $font-size-32;
-    padding-top: 0.5%;
-    padding-right: 23vw;
+    margin-top: 24vh;
+    margin-right: 23vw;
+  }
+
+  .main__animation1440 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    color: $white;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    overflow: hidden;
   }
 
   .main__mobilebtn {
     display: none;
   }
-}
 
-@media screen and (min-width: 1000px) {
-  // .main__background-image {
-  //   background-image: url("../../assets/images/main-1500.jpg");
-  // }
+  .main__animation1000 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1300px) {
   .h1 {
-    font-size: 100px;
-    padding-top: 5.7vh;
-    padding-right: 10vw;
+    font-size: 80px;
+    margin-top: 2vh;
+    margin-right: 13vw;
   }
 
   .main__p {
     font-size: $font-size-32;
-    padding-top: 0.5%;
-    padding-right: 18vw;
+    margin-top: 16vh;
+    margin-right: 12vw;
+  }
+
+  .main__animation1440 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    color: $white;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    overflow: hidden;
   }
 
   .main__mobilebtn {
+    display: none;
+  }
+
+  .main__animation1000 {
     display: none;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .main__background-image {
-    background-image: url("../../assets/images/main-1000.jpg");
-  }
-
   .h1 {
     font-size: 100px;
     padding-top: 0.6vh;
@@ -406,6 +439,25 @@ body {
 
   .main__mobilebtn {
     display: none;
+  }
+
+  .main__animation1440 {
+    display: none;
+  }
+
+  .main__animation1000 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    color: $white;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    overflow: hidden;
   }
 }
 
@@ -491,32 +543,20 @@ body {
   }
 }
 
-.main__background-image {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
-  color: $white;
-  max-width: 100%;
-  height: 650px;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  overflow: hidden;
-}
-
 .h1 {
   font-family: $font-family-h;
   font-weight: 100;
-  margin-top: 0;
   margin-bottom: 0;
+  position: absolute;
+  z-index: 1;
 }
 
 .main__p {
   font-family: $font-family-base;
   font-weight: 300;
-  margin-top: 0;
   margin-bottom: 0;
+  position: absolute;
+  z-index: 1;
 }
 
 // About
@@ -1333,30 +1373,4 @@ body {
 
 .footer__a:focus {
   color: #c7c7c7;
-}
-
-#animation-container {
-  position: relative;
-  width: 100%; /* Установите ширину и высоту в соответствии с вашими потребностями */
-  height: 100%;
-}
-
-.h1-overlay {
-  position: absolute;
-  top: 50%; /* Позиционируйте текст по центру */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white; /* Установите цвет текста */
-  font-size: 24px; /* Установите размер шрифта */
-  z-index: 1; /* Убедитесь, что текст находится поверх SVG */
-}
-
-.text-overlay {
-  position: absolute;
-  top: 50%; /* Позиционируйте текст по центру */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white; /* Установите цвет текста */
-  font-size: 24px; /* Установите размер шрифта */
-  z-index: 1; /* Убедитесь, что текст находится поверх SVG */
 }
