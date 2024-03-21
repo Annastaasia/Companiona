@@ -11,13 +11,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let anim = lottie.loadAnimation(params);
 
-    let h1Overlay = document.createElement('h1');
-    h1Overlay.className = 'h1';
-    h1Overlay.textContent = 'Попутчица';
-    container.appendChild(h1Overlay);
+    let textContainer = document.createElement('div');
+    textContainer.className = 'main__div';
+    container.appendChild(textContainer);
 
-    let pOverlay = document.createElement('p');
-    pOverlay.className = 'main__p';
-    pOverlay.textContent = 'Безопасность — поддержка';
-    container.appendChild(pOverlay);
+    let h1Main = document.createElement('h1');
+    h1Main.className = 'h1';
+    h1Main.textContent = 'Попутчица';
+    textContainer.appendChild(h1Main);
+
+    let pMain = document.createElement('p');
+    pMain.className = 'main__p';
+    pMain.textContent = 'Безопасность — поддержка';
+    textContainer.appendChild(pMain);
 });
