@@ -367,7 +367,15 @@ body {
     font-size: $font-size-h1;
   }
 
+  .h1__eng {
+    font-size: $font-size-h1;
+  }
+
   .main__p {
+    font-size: $font-size-32;
+  }
+
+  .main__p__eng {
     font-size: $font-size-32;
   }
 
@@ -411,7 +419,15 @@ body {
     font-size: 90px;
   }
 
+  .h1__eng {
+    font-size: 90px;
+  }
+
   .main__p {
+    font-size: $font-size-32;
+  }
+
+  .main__p__eng {
     font-size: $font-size-32;
   }
 
@@ -455,7 +471,15 @@ body {
     font-size: 80px;
   }
 
+  .h1__eng {
+    font-size: 80px;
+  }
+
   .main__p {
+    font-size: 28px;
+  }
+
+  .main__p__eng {
     font-size: 28px;
   }
 
@@ -500,7 +524,15 @@ body {
     font-size: 90px;
   }
 
+  .h1__eng {
+    font-size: 90px;
+  }
+
   .main__p {
+    font-size: 30px;
+  }
+
+  .main__eng {
     font-size: 30px;
   }
 
@@ -545,7 +577,15 @@ body {
     font-size: 80px;
   }
 
+  .h1__eng {
+    font-size: 80px;
+  }
+
   .main__p {
+    font-size: 30px;
+  }
+
+  .main__p__eng {
     font-size: 30px;
   }
 
@@ -602,7 +642,15 @@ body {
     font-size: 56px;
   }
 
+  .h1__eng {
+    font-size: 56px;
+  }
+
   .main__p {
+    font-size: 20px;
+  }
+
+  .main__p__eng {
     font-size: 20px;
   }
 }
@@ -614,7 +662,21 @@ body {
   z-index: 1;
 }
 
+.h1__eng {
+  font-family: $font-family-h;
+  font-weight: 100;
+  margin: 0;
+  z-index: 1;
+}
+
 .main__p {
+  font-family: $font-family-base;
+  font-weight: 300;
+  margin: 0;
+  z-index: 1;
+}
+
+.main__p__eng {
   font-family: $font-family-base;
   font-weight: 300;
   margin: 0;
@@ -878,6 +940,7 @@ body {
   .doing__background-image {
     background-image: url("../../assets/images/doing.png");
     background-position: bottom right;
+    background-size: auto;
   }
 
   .doing__container {
@@ -907,6 +970,7 @@ body {
   .doing__background-image {
     background-image: url("../../assets/images/doing-1100.png");
     background-position: right top;
+    background-size: cover;
   }
 
   .doing__container {
@@ -961,6 +1025,7 @@ body {
   .doing__background-image {
     background-image: url("../../assets/images/doing-1100.png");
     background-position: right top;
+    background-size: cover;
   }
 
   .doing__container {
@@ -989,13 +1054,13 @@ body {
   .doing__background-image {
     background-image: url("../../assets/images/doing-400.png");
     background-position: right top;
+    background-size: cover;
   }
 }
 
 .doing__background-image {
   max-width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
   overflow: hidden;
 }
 
@@ -1249,6 +1314,7 @@ body {
 .team__cardtitle {
   font-family: $font-family-base;
   font-weight: 600;
+  text-align: center;
   margin: 0;
 }
 
